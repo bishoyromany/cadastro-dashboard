@@ -2,6 +2,9 @@
 $errors = [];
 if (isset($_POST['login'])) {
     $errors = $controller::login($_POST);
+    if (empty($errors)) {
+        $controller::redirect("admin.php");
+    }
 }
 
 ?>

@@ -21,7 +21,7 @@ class User extends Model
             $user = $user[0];
             $_SESSION['user'] = $user;
             $cookieHash = sha1(uniqid() . rand(100000, 10000000));
-            setcookie("login", $cookieHash, isset($data['remember_me']) ? time() + $this->cookieDays : 0);
+            setcookie("login", $cookieHash, isset($data['remember_me']) ? time() + $this->cookieDays : 0, '/');
             $this->update([
                 'cookie' => $cookieHash
             ], [['id', '=', $user['id']]]);

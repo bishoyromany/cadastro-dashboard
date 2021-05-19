@@ -4,12 +4,26 @@ require __DIR__ . "/../App/Controller.php";
 global $controller;
 $controller = new App\Controller();
 
+
+if (isset($_POST['logout'])) {
+    if (isset($_SESSION['user'])) {
+        unset($_SESSION['user']);
+    }
+
+    if (isset($_COOKIE['login'])) {
+        unset($_COOKIE['login']);
+        setcookie('login', null, 0, '/');
+    }
+}
+
 $user = $controller::getUser();
 $controller::setTimezone();
 
 if (!isset($user['id'])) {
     $controller::redirect("index.php");
 }
+
+
 
 ?>
 
@@ -34,3 +48,15 @@ if (!isset($user['id'])) {
 </head>
 
 <body>
+    <div class="container-fluid">
+        <nav class="admin-navbar d-felx p-2" id="AdminNavbar">
+            <div class="col-6 text-left">
+                <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+            </div>
+            <div class="col-6">
+                <form action="admin.php" method="POST">
+                    <input type="hidden" value="1" name="logout" />
+                    <button><img src="<?php echo $controller::getImage("shut-down.svg"); ?>" alt="Logout" class="img-fluid"></button>
+                </form>
+            </div>
+        </nav>

@@ -2,13 +2,17 @@
 
 namespace App;
 
+session_start();
+
 require_once __DIR__ . "/Database.php";
 require_once __DIR__ . "/../Models/User.php";
 require_once __DIR__ . "/../Models/Config.php";
+require_once __DIR__ . "/../Models/Visitor.php";
 
 use App\Database;
 use Models\User;
 use Models\Config;
+use Models\Visitor;
 
 class Controller
 {
@@ -18,6 +22,11 @@ class Controller
     public static function getImage(String $name): String
     {
         return "./assets/images/$name";
+    }
+
+    public static function addVisitor(): array
+    {
+        return (new Visitor)->visitor();
     }
 
     public static function getUser()
