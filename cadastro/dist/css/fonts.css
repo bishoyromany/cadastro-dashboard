@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: "museo100";
+    src: url("font/museo100regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo300";
+    src: url("../font/museo-300-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo500";
+    src: url("../font/museo500-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo700";
+    src: url("../font/museo700-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museo900";
+    src: url("../font/museo900-regular-webfont.woff2") format("woff2");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museoSans300";
+    src: url("../font/museosans300-regular-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "museoSans500";
+    src: url("../font/museosans_500-webfont.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,286 @@
+
+.main-body{
+     background-color: rgb(242, 242, 242);
+}
+
+
+.main-reg{
+    width: 100%;
+    height: auto;
+    clear: both;
+    background-color: rgb(242, 242, 242);
+    padding: 0vh;
+}
+
+.main-reg2{
+    width: 100%;
+    height: 100%;
+    clear: both;
+    background-color: rgb(242, 242, 242);
+    padding: 0vh;
+}
+.main-top-header {
+    height: 10.6vh;
+    background: rgb(0, 174, 239);
+}
+
+.main-top-container-header{
+    width: 53.48vw;
+    height: 100%;
+    position: relative;
+    margin: 0px auto;
+}
+
+.main-logo{
+    display: inline;
+}
+
+.icons-logo{
+    position: absolute;
+    left: 0px;
+    background-image: url(../../assest/logo-cielo.svg);
+    background-size: 95%;
+    top: 0em;
+    transform: none;
+    height: 100%;
+    width: 6.36%;
+    min-width: 100px;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.main-form-data {
+    overflow: auto;
+}
+
+.container-forms{
+    width: 42.48vw;
+    margin: 0px auto;
+}
+
+.section-title {
+   
+    padding: 5vh 0px 5vh 1vh;
+}
+
+.form-data-bank-title{
+font-family: museo900;
+    font-size: 1.3em;
+    color: rgb(0, 0, 0);
+    }
+
+.form-data-bank-text{
+    font-family: museo500;
+    font-size: 0.8em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.section-content{
+   
+    background-color: rgb(255, 255, 255);
+    padding: 2.6vh 2vw 2vh;
+    border-radius: 12px;
+        margin-bottom: 20px;
+    padding: 30px !important;
+    
+}
+
+.section-content h5 {
+    font-family: museo900;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.container-forms .form-group label {
+    font-family: museo300;
+    font-size: 15px;
+   margin-bottom: 0px;
+    
+}
+
+.form-help {
+    font-family: museo300;
+     font-size: 15px;
+}
+
+.form-help h3 {
+    color: rgb(20, 94, 179);
+    font-family: museo700;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.helptext{
+padding-left: 75px;
+    padding-right: 35px;
+}
+
+.text-box {
+    font-family: museo300;
+    color: rgb(51, 51, 51);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(187, 187, 187);
+    border-image: initial;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.btn-container{
+    margin-top: 20px;
+}
+
+.next-button{
+    min-width: 117px;
+    min-height: 27px;
+    color: white;
+    box-shadow: none;
+    font-family: museo500;
+    font-size: 12px;
+    border-radius: 20px;
+    outline: none;
+
+}
+
+.next-button.primary {
+    background-color: rgb(62, 28, 162);
+    line-height: 38px;
+    font-size: 14px;
+    width: 150px;
+    margin-left: 10px;
+        border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.next-button.primary:hover {
+    background-color: rgb(64, 70, 161);
+    transition: background-color 200ms ease 0s;
+}
+
+.text-box:focus {
+       color: #495057;
+    background-color: #fff;
+    border: 1px solid #5ea6f5;
+    outline: 1;
+    box-shadow: 0 0 0 0rem rgb(0 123 255 / 25%);
+}
+
+.next-button.primary:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.row-fluid-footer{
+font-family: Museo300;
+    font-size: 1.5vh;
+}
+
+#company_information{
+			display:none;
+}
+#success_message{
+			display:none;
+}
+
+
+.has-error input{
+    background: #ffecec !important;
+}
+
+.has-error span::before{
+    content:'';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 6px solid #d73253;
+    border-bottom: 3px solid transparent;
+    right:100%;
+    margin-top: -9px;
+    position: absolute;
+    clear: both;
+    left: 50%;
+    -webkit-transform: rotate(
+90deg
+);
+    -moz-transform: rotate(90deg);
+}
+
+.has-error span{
+    display: inline-block; 
+    overflow: hidden;
+    background-color: #d73253;
+    max-width: 300px !important;
+    color: #ffffff;
+    font-size: 0.68em;
+    font-family: "museoSans500";
+  width: 100%;
+    padding: 3px 15px;
+    margin-bottom: -15px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-height: 2200px)
+{
+.icons-logo {
+    width: 6.95vw !important;
+}
+    
+}
+
+
+@media only screen and (max-width: 1020px)
+{
+.main-top-container-header{
+    width: 68.46vw;
+    height: 100%;
+    position: relative;
+    margin: 0px auto;
+}
+.container-forms{
+    width: 80%;
+    margin: 0px auto;
+   
+}
+.main-form-data {
+    overflow: inherit;
+}
+   
+    .helptext {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+    .next-button.primary{
+        float: right;
+    }
+    
+    .main-reg{
+    width: 100%;
+    height: auto;
+    clear: both;
+    background-color: rgb(242, 242, 242);
+    padding: 0vh;
+}
+       .main-reg2{
+    width: 100%;
+    height: 100%;
+    clear: both;
+    background-color: rgb(242, 242, 242);
+    padding: 0vh;
+}
+
+    .row-fluid-footer{
+font-family: Museo300;
+    font-size: 1.6vh;
+        padding-bottom: 20px;
+}
+}
