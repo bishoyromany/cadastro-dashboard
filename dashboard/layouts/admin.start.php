@@ -5,6 +5,7 @@ global $controller;
 $controller = new App\Controller();
 
 $user = $controller::getUser();
+$controller::setTimezone();
 
 if (!isset($user['id'])) {
     $controller::redirect("index.php");

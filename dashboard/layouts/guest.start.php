@@ -4,6 +4,8 @@ require __DIR__ . "/../App/Controller.php";
 global $controller;
 $controller = new App\Controller();
 
+$controller::setTimezone();
+
 $user = $controller::getUser();
 
 if (isset($user['id'])) {

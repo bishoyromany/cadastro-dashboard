@@ -4,9 +4,11 @@ namespace App;
 
 require_once __DIR__ . "/Database.php";
 require_once __DIR__ . "/../Models/User.php";
+require_once __DIR__ . "/../Models/Config.php";
 
 use App\Database;
 use Models\User;
+use Models\Config;
 
 class Controller
 {
@@ -23,12 +25,23 @@ class Controller
         return (new User)->user();
     }
 
+    public static function setTimezone()
+    {
+        date_default_timezone_set(self::getConfig("TIME_ZONE"));
+    }
+
     /**
      * Login
      */
     public static function login(array $data): array
     {
         return (new User)->login($data);
+    }
+
+
+    public static function getConfig(String $key)
+    {
+        return (new Config)->getConfig($key);
     }
 
     public static function getCon()

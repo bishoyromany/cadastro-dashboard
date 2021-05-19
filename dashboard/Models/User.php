@@ -2,7 +2,7 @@
 
 namespace Models;
 
-require __DIR__ . "/Model.php";
+require_once __DIR__ . "/Model.php";
 
 use Models\Model;
 
