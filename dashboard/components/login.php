@@ -22,9 +22,7 @@ if (isset($_POST['login'])) {
                     <span class="input-group-text" id="inputGroupUsername"><img src="<?php echo $controller::getImage("user.svg"); ?>" width="20" alt="img" class="img-fluid" /></span>
                 </div>
                 <input type="text" name="username" class="form-control <?php echo isset($errors['username']) ? "is-invalid" : "" ?>" id="validationServerUsername" placeholder="Enter Username" aria-describedby="inputGroupUsername" required>
-                <?php if (isset($errors['username'])) {
-                    echo '<div class="invalid-feedback">' . $errors['username'] . '</div>';
-                } ?>
+                <div class="invalid-feedback"><?php echo $errors['username'] ?? null; ?></div>
             </div>
         </div>
 
@@ -34,9 +32,7 @@ if (isset($_POST['login'])) {
                     <span class="input-group-text" id="inputGroupPassword"><img src="<?php echo $controller::getImage("lock.svg"); ?>" width="20" alt="img" class="img-fluid" /></span>
                 </div>
                 <input type="password" name="password" class="form-control <?php echo isset($errors['password']) ? "is-invalid" : "" ?>" id="validationServerPassword" placeholder="Enter password" aria-describedby="inputGroupPassword" required>
-                <?php if (isset($errors['password'])) {
-                    echo '<div class="invalid-feedback">' . $errors['password'] . '</div>';
-                } ?>
+                <div class="invalid-feedback"><?php echo $errors['password'] ?? null; ?></div>
             </div>
         </div>
 
