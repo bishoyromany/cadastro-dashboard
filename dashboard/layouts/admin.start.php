@@ -6,8 +6,8 @@ $controller = new App\Controller();
 
 $user = $controller::getUser();
 
-if (isset($user['id'])) {
-    $controller::redirect("admin.php");
+if (!isset($user['id'])) {
+    $controller::redirect("index.php");
 }
 
 ?>

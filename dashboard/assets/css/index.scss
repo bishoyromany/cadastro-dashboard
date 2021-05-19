@@ -1,0 +1,15 @@
+@import "./components/login";
+
+.btn-purple{
+	background-color: #5969FF;
+	color: #FFF;
+	&:hover{
+		background-color: #6271f8;
+		color: #FFF;
+	}
+}
+
+html,body { 
+	height: 100%; 
+	background-color: #F2F2F2;
+}

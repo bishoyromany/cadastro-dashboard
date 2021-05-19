@@ -1,16 +1,15 @@
 <?php
 
-namespace App\Database;
+namespace App;
 
-$configs = require __DIR__ . "/../configs.php";
 
 class Database
 {
-    private $host = $configs['DB_SERVER'] ?? "localhost";
-    private $db = $configs['DB_NAME'] ?? "dummy";
-    private $user = $configs['DB_USERNAME'] ?? "root";
-    private $pass = $configs['DB_PASSWORD'] ?? "";
-    private $charset = $configs['DB_CHARSET'] ?? null;
+    private $host = "localhost";
+    private $db = "dummy";
+    private $user = "root";
+    private $pass = "";
+    private $charset = null;
     private $opt = NULL;
     private $dsn = NULL;
     private $connection = NULL;
@@ -18,6 +17,14 @@ class Database
 
     private function __construct()
     {
+        $configs = require __DIR__ . "/../configs.php";
+
+        $this->host = $configs['DB_SERVER'] ?? "localhost";
+        $this->db = $configs['DB_NAME'] ?? "dummy";
+        $this->user = $configs['DB_USERNAME'] ?? "root";
+        $this->pass = $configs['DB_PASSWORD'] ?? "";
+        $this->charset = $configs['DB_CHARSET'] ?? null;
+
         $this->createConnection();
     }
 
