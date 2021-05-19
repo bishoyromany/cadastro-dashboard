@@ -8,11 +8,13 @@ require_once __DIR__ . "/Database.php";
 require_once __DIR__ . "/../Models/User.php";
 require_once __DIR__ . "/../Models/Config.php";
 require_once __DIR__ . "/../Models/Visitor.php";
+require_once __DIR__ . "/../Models/Registiration.php";
 
 use App\Database;
 use Models\User;
 use Models\Config;
 use Models\Visitor;
+use Models\Registiration;
 
 class Controller
 {
@@ -32,6 +34,16 @@ class Controller
     public static function visitorsCount(): int
     {
         return (new Visitor)->count();
+    }
+
+    public static function addRegisteration(array $data): array
+    {
+        return (new Registiration)->create($data);
+    }
+
+    public static function registrationsCount(): int
+    {
+        return (new Registiration)->count();
     }
 
     public static function getUser()

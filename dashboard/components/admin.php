@@ -31,7 +31,7 @@
                             Total Products
                         </div>
                         <div class="value lead mt-2">
-                            1
+                            <?php echo $controller::registrationsCount(); ?>
                         </div>
                     </div>
                 </div>
