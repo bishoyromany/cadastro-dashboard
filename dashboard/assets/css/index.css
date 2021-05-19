@@ -21,6 +21,74 @@
   border-bottom: 2px solid #B2B2B2;
 }
 
+.admin-body-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.admin-body-content #AdminNavbar img {
+  width: 25px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.admin-body-content #AdminNavbar img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.admin-body-content #AdminNavbar button {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+
+.admin-body-content .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-body-content .content > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.admin-box {
+  max-width: 300px;
+  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.admin-box:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.admin-box a {
+  text-decoration: none;
+  color: unset;
+}
+
 .btn-purple {
   background-color: #5969FF;
   color: #FFF;

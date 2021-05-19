@@ -48,15 +48,20 @@ if (!isset($user['id'])) {
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid admin-body-content">
         <nav class="admin-navbar d-felx p-2" id="AdminNavbar">
-            <div class="col-6 text-left">
-                <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+            <div class="row">
+                <div class="col-6 text-left">
+                    <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+                </div>
+                <div class="col-6 text-right">
+                    <form action="admin.php" method="POST">
+                        <input type="hidden" value="1" name="logout" />
+                        <button><img src="<?php echo $controller::getImage("shut-down.svg"); ?>" alt="Logout" class="img-fluid"></button>
+                    </form>
+                </div>
             </div>
-            <div class="col-6">
-                <form action="admin.php" method="POST">
-                    <input type="hidden" value="1" name="logout" />
-                    <button><img src="<?php echo $controller::getImage("shut-down.svg"); ?>" alt="Logout" class="img-fluid"></button>
-                </form>
-            </div>
+
         </nav>
+
+        <div class="content">

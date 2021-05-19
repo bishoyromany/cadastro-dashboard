@@ -62,11 +62,11 @@ abstract class Model
         return $this->fetch($stmt);
     }
 
-    public function count()
+    public function count(): int
     {
-        $stmt = $this->con()->prepare("SELECT COUNT(*) FROM " . $this->table);
+        $stmt = $this->con()->prepare("SELECT COUNT(*) as `num` FROM " . $this->table);
         $stmt->execute();
-        return $this->fetch($stmt);
+        return $this->fetch($stmt)[0]['num'] ?? 0;
     }
 
     public function buildData(array $data)

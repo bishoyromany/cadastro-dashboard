@@ -29,6 +29,11 @@ class Controller
         return (new Visitor)->visitor();
     }
 
+    public static function visitorsCount(): int
+    {
+        return (new Visitor)->count();
+    }
+
     public static function getUser()
     {
         return (new User)->user();

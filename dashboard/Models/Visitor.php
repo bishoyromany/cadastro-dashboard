@@ -50,10 +50,4 @@ class Visitor extends Model
 
         return $this->insert($visitorData);
     }
-
-
-    public function count()
-    {
-        return $this->count();
-    }
 }
