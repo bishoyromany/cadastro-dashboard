@@ -28,7 +28,7 @@ html{
 .main-top-header {
     height: 10.6vh;
     background: rgb(0, 174, 239);
-    max-height: 75px;
+    /* max-height: 75px; */
 }
 
 .main-top-container-header{
