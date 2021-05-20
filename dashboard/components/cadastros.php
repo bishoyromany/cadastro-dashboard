@@ -26,7 +26,7 @@
 
     <div class="card mt-4">
         <div class="card-header d-flex align-items-center">
-            <span class="lead">Visitor List</span>
+            <span class="lead">Product List</span>
         </div>
         <div class="card-body">
             <table id="RecordsTable" class="display responsive nowrap" style="width:100%" data-section="registrations">

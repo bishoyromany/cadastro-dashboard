@@ -7,6 +7,8 @@ use App\Controller;
 use Models\Visitor;
 use Models\Registiration;
 
+Controller::setTimezone();
+
 if (isset($_GET['section'])) {
     $map = [];
     $class = [];
