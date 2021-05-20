@@ -36,6 +36,7 @@ if (!isset($user['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?? "Please Define Title"; ?></title>
     <link rel="stylesheet" href="./libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./libraries/datatable/jquery.dataTables.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
 
 
@@ -43,6 +44,7 @@ if (!isset($user['id'])) {
     <script src="./libraries/jquery/jquery.validate.js"></script>
     <script src="./libraries/jquery/popper.min.js"></script>
     <script src="./libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="./libraries/datatable/jquery.dataTables.min.js"></script>
 
     <script src="./assets/js/index.js"></script>
 </head>
@@ -52,7 +54,9 @@ if (!isset($user['id'])) {
         <nav class="admin-navbar d-felx p-2" id="AdminNavbar">
             <div class="row">
                 <div class="col-6 text-left">
-                    <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+                    <?php if ($back) : ?>
+                        <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+                    <?php endif; ?>
                 </div>
                 <div class="col-6 text-right">
                     <form action="admin.php" method="POST">

@@ -111,6 +111,18 @@ abstract class Model
         return $this->fetch($stmt);
     }
 
+    public function datatable(array $where, array $paginate, array $order)
+    {
+        $where = $this->buildWhere($where);
+        $start = $paginate['start'];
+        $end = $paginate['end'];
+        $orderColumn = $order['column'];
+        $sort = $order['sort'];
+        $stmt = $this->con()->prepare("SELECT * FROM " . $this->table . "$where ORDER BY `$orderColumn` $sort LIMIT $start,$end");
+        $stmt->execute();
+        return $this->fetch($stmt);
+    }
+
     public function whereCount(array $data)
     {
         $where = $this->buildWhere($data);

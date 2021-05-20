@@ -70,8 +70,13 @@
           flex: 1;
 }
 
+.admin-boxes-contaner {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .admin-box {
-  max-width: 300px;
+  width: 300px;
   border-radius: 5px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
@@ -87,6 +92,16 @@
 .admin-box a {
   text-decoration: none;
   color: unset;
+}
+
+.contador .card .card-header img {
+  width: 25px;
+}
+
+.btn-reset {
+  background-color: transparent;
+  outline: 0;
+  border: unset;
 }
 
 .btn-purple {

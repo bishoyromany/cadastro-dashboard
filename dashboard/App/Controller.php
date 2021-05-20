@@ -26,6 +26,34 @@ class Controller
         return "./assets/images/$name";
     }
 
+    public static function datatable(Object $class, string $order, string $column, string $search, int $start, int $end, array $map, string $searchColumn): array
+    {
+        $result = [];
+        $where = [];
+        if (strlen($search) > 0) {
+            $where = [[$searchColumn, 'LIKE', '%' . $search . '%']];
+        }
+
+        $d = $class->datatable($where, ['start' => $start, 'end' => $end], ['column' => $column, 'sort' => $order]);
+        $count = $class->whereCount($where);
+        $mapedData = [];
+
+        foreach ($d as $data) {
+            $tempData = [];
+            foreach ($map as $key => $value) {
+                $tempData[$key] = $data[$value];
+            }
+
+            $mapedData[] = $tempData;
+        }
+
+        $result['recordsTotal'] = $count[0]['count'] ?? 0;
+        $result['recordsFiltered'] = $count[0]['count'] ?? 0;
+        $result['data'] = $mapedData;
+
+        return $result;
+    }
+
     public static function addVisitor(): array
     {
         return (new Visitor)->visitor();
