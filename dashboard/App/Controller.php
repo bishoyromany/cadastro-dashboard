@@ -164,7 +164,7 @@ class Controller
 
     public static function redirect(String $url)
     {
-        header("location : $url");
+        // header("location : $url");
         echo "<h1>you are being redirected to <a href='$url'>To</a></h1><script>location.href = '$url'</script>";
         exit();
     }
