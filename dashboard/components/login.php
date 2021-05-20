@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
 <div id="login" class="p-4 d-flex align-items-center justify-content-center">
     <form method="POST">
         <div class="logo my-2 mx-auto">
-            <img src="<?php echo $controller::getImage("dummy-logo.jpg") ?>" class="img-fluid" alt="Logo">
+            <img src="<?php echo $controller::getImage("logo.png") ?>" class="img-fluid" alt="Logo">
         </div>
 
         <div class="title text-center pb-2 mb-3">

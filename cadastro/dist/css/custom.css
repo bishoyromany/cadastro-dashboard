@@ -22,6 +22,7 @@
 .main-top-header {
     height: 10.6vh;
     background: rgb(0, 174, 239);
+    max-height: 75px;
 }
 
 .main-top-container-header{
@@ -50,6 +51,14 @@
     background-repeat: no-repeat;
 }
 
+.logo{
+    height: 100%;
+    padding: 12.5px;
+}
+
+.logo img{
+    max-height: 100%;
+}
 
 .main-form-data {
     overflow: auto;
