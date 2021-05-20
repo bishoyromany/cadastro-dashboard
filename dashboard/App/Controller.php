@@ -39,6 +39,7 @@ class Controller
         $mapedData = [];
 
         foreach ($d as $data) {
+            $data['created_at'] = date('d/m/Y H:i:s');
             $tempData = [];
             foreach ($map as $key => $value) {
                 if (is_string($value)) {

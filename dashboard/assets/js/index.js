@@ -34,6 +34,7 @@ $(document).ready(($) => {
       processing: true,
       serverSide: true,
       responsive: true,
+      searching: false,
       ajax: "API/index.php?section=" + $("#RecordsTable").data("section"),
     });
   }

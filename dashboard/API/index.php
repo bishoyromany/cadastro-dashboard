@@ -17,7 +17,9 @@ if (isset($_GET['section'])) {
             '0' => 'id',
             '1' => 'created_at',
             '2' => 'ip',
-            '3' => 'useragnt'
+            '3' => 'useragnt',
+            '4' => 'asn',
+            '5' => 'country'
         ];
 
         $class = new Visitor;

@@ -45,21 +45,6 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>No</th>
-                        <th>Create</th>
-                        <th>Full Name</th>
-                        <th>CPF</th>
-                        <th>Telephone</th>
-                        <th>Email</th>
-                        <th>Purchase Type and Category</th>
-                        <th>Request number</th>
-                        <th>Month and year of purchase</th>
-                        <th>Lucky Number</th>
-                        <th>Action</th>
-                    </tr>
-                </tfoot>
             </table>
         </div>
     </div>

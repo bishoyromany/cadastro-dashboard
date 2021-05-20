@@ -40,16 +40,10 @@
                         <th>DATE/TIME</th>
                         <th>IP Address</th>
                         <th>User Agent</th>
+                        <th>ASN Code</th>
+                        <th>Country</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>No</th>
-                        <th>DATE/TIME</th>
-                        <th>IP Address</th>
-                        <th>User Agent</th>
-                    </tr>
-                </tfoot>
             </table>
         </div>
     </div>
