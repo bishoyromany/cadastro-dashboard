@@ -12,8 +12,16 @@ class Registiration extends Model
 
     public function create(array $data): array
     {
-        var_dump($data);
-        die;
-        return $this->insert($data);
+        return $this->insert([
+            'full_name' => $data['name'],
+            'email' => $data['email'],
+            'created_at' => date('Y-m-d H:i:s'),
+            'cpf' => $data['cpf'],
+            'telephone' => $data['telephone'],
+            'purchase_type' => $data['purchasetype'],
+            'requisition_number' => $data['requestno'],
+            'date_year' => $data['monthyear'],
+            'lucky_number' => $data['luckyno']
+        ]);
     }
 }

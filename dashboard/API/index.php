@@ -37,4 +37,7 @@ if (isset($_GET['section'])) {
     die;
 }
 
-Controller::dd($_GET);
+if (isset($_GET['telephone'])) {
+    echo json_encode(Controller::addRegisteration($_GET));
+    die;
+}
