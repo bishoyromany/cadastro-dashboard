@@ -41,7 +41,13 @@ class Controller
         foreach ($d as $data) {
             $tempData = [];
             foreach ($map as $key => $value) {
-                $tempData[$key] = $data[$value];
+                if (is_string($value)) {
+                    $tempData[$key] = $data[$value];
+                } else {
+                    if ($value['key'] === "CUSTOM_HANDLER") {
+                        $tempData[$key] = $value['handler']($data);
+                    }
+                }
             }
 
             $mapedData[] = $tempData;
@@ -64,6 +70,11 @@ class Controller
         return (new Visitor)->count();
     }
 
+    public static function deleteAllVisits(): int
+    {
+        return (new Visitor)->delete([]);
+    }
+
     public static function addRegisteration(array $data): array
     {
         return (new Registiration)->create($data);
@@ -72,6 +83,11 @@ class Controller
     public static function registrationsCount(): int
     {
         return (new Registiration)->count();
+    }
+
+    public static function deleteRegisteration(int $id): int
+    {
+        return (new Registiration)->delete([['id', '=', $id]]);
     }
 
     public static function getUser()

@@ -98,6 +98,14 @@
   width: 25px;
 }
 
+.contador .card .card-body {
+  overflow: auto;
+}
+
+.contador table img {
+  width: 25px;
+}
+
 .btn-reset {
   background-color: transparent;
   outline: 0;

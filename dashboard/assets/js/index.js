@@ -33,6 +33,7 @@ $(document).ready(($) => {
     $("#RecordsTable").DataTable({
       processing: true,
       serverSide: true,
+      responsive: true,
       ajax: "API/index.php?section=" + $("#RecordsTable").data("section"),
     });
   }

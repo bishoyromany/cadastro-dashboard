@@ -23,7 +23,15 @@ if (!isset($user['id'])) {
     $controller::redirect("index.php");
 }
 
+if (isset($_POST['action'])) {
+    if ($_POST['action'] === "DELETE_ALL_VISITS") {
+        $controller::deleteAllVisits();
+    }
 
+    if ($_POST['action'] === "DELETE_REGISTRATION") {
+        $controller::deleteRegisteration((int)$_POST['id'] ?? 0);
+    }
+}
 
 ?>
 
