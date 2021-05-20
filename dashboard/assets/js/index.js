@@ -36,10 +36,10 @@ $(document).ready(($) => {
       responsive: true,
       searching: false,
       ajax: "API/index.php?section=" + $("#RecordsTable").data("section"),
+      "drawCallback": function( settings ) {
+        $(".dataTables_info").prepend($(".delete-all")[0]);
+        $(".dataTables_info .delete-all").removeClass("d-none");
+      }
     });
-    setTimeout(() => {
-      $(".dataTables_info").prepend($(".delete-all")[0]);
-      $(".dataTables_info .delete-all").removeClass("d-none");
-    }, 500)
   }
 });

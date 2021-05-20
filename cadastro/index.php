@@ -1,3 +1,12 @@
+<?php
+require __DIR__ . "/../Dashboard/App/Controller.php";
+use App\Controller;
+Controller::setTimezone();
+
+Controller::addVisitor();
+
+?>
+
 <html>
     <head>
 	    <title>Cadastro</title>

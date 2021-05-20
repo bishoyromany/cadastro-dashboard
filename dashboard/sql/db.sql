@@ -97,21 +97,9 @@ CREATE TABLE `visitors` (
   `ip` varchar(200) NOT NULL,
   `host_of_ip` varchar(200) NOT NULL,
   `useragnt` varchar(200) NOT NULL,
-  `asn` varchar(200) NOT NULL,
   `country` varchar(200) NOT NULL,
   `created_at` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `visitors`
---
-
-INSERT INTO `visitors` (`id`, `ip`, `host_of_ip`, `useragnt`, `asn`, `country`, `created_at`) VALUES
-(1, '127.0.0.1', 'default.nginx', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68', 'Please Install Pecl To Use geoip_asnum_by_name Function', 'Please Install Pecl To Use geoip_country_name_by_name Function', '2021-05-19 21:32:15'),
-(2, '127.0.0.1', 'default.nginx', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68', 'Please Install Pecl To Use geoip_asnum_by_name Function', 'Please Install Pecl To Use geoip_country_name_by_name Function', '2021-05-19 21:32:24'),
-(3, '127.0.0.1', 'default.nginx', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68', 'Please Install Pecl To Use geoip_asnum_by_name Function', 'Please Install Pecl To Use geoip_country_name_by_name Function', '2021-05-19 22:06:01'),
-(4, '127.0.0.1', 'default.nginx', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68', 'Please Install Pecl To Use geoip_asnum_by_name Function', 'Please Install Pecl To Use geoip_country_name_by_name Function', '2021-05-19 22:06:08'),
-(5, '127.0.0.1', 'default.nginx', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68', 'Please Install Pecl To Use geoip_asnum_by_name Function', 'Please Install Pecl To Use geoip_country_name_by_name Function', '2021-05-19 22:06:17');
 
 --
 -- Indexes for dumped tables

@@ -36,11 +36,6 @@ class Visitor extends Model
         ];
 
         $visitorData['host_of_ip'] = gethostbyaddr($visitorData['ip']);
-        if (function_exists("geoip_asnum_by_name")) {
-            $visitorData['asn'] = geoip_asnum_by_name($visitorData['host_of_ip']);
-        } else {
-            $visitorData['asn'] = "Please Install Pecl To Use geoip_asnum_by_name Function";
-        }
 
         if (function_exists("geoip_country_name_by_name")) {
             $visitorData['country'] = geoip_country_name_by_name($visitorData['host_of_ip']);

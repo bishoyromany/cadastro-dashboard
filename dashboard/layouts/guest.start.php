@@ -12,8 +12,6 @@ if (isset($user['id'])) {
     $controller::redirect("admin.php");
 }
 
-$controller::addVisitor();
-
 ?>
 
 <!DOCTYPE html>
