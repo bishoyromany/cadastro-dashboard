@@ -16,3 +16,7 @@
 1. Open phpmyadmin or your database work branch application.
 2. Go to `configs` table.
 3. Search for `TIME_ZONE` key name, then change its value to the timezone you need.
+
+### Preview URL
+
+#### http://cadastro-dashboard.laradev.site/dashboard/
