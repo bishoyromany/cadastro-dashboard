@@ -1,6 +1,12 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
 
 .main-body{
      background-color: rgb(242, 242, 242);
+     margin: 0px; 
+     padding: 0px;
 }
 
 
