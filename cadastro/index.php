@@ -18,8 +18,7 @@ Controller::addVisitor();
 <script src="dist/js/bootstrap.min.js"></script>
 <script src="dist/js/jquery-3.3.1.slim.min.js"></script>
         <script src="dist/js/jquery.validate.js"></script>
-        <script src="dist/js/jquery.ma
-        sk.js"></script>
+        <script src="dist/js/jquery.mask.js"></script>
  <link rel="preload" as="font" href="dist/font/museosans_500-webfont.woff2">
         <link rel="preload" as="font" href="dist/font/museo-300-webfont.woff2">
         <link rel="preload" as="font" href="dist/font/museo500-regular-webfont.woff2">
