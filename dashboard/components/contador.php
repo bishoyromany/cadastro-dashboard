@@ -40,7 +40,7 @@
                         <th>DATE/TIME</th>
                         <th>IP Address</th>
                         <th>User Agent</th>
-                        <th>ASN Code</th>
+                        <th>Hostname Of IP</th>
                         <th>Country</th>
                     </tr>
                 </thead>

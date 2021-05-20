@@ -39,14 +39,14 @@ if (isset($_POST['login'])) {
             </div>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="remember_me" value="1" id="rememberMe">
                 <label class="form-check-label" for="rememberMe">
                     Remember me
                 </label>
             </div>
-        </div>
+        </div> -->
         <input class="btn btn-purple btn-block" type="submit" name="login" value="Submit Form" />
     </form>
 </div>

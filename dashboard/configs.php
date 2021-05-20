@@ -6,5 +6,5 @@
 return [
     "DB_USERNAME" => "root",
     "DB_PASSWORD" => "",
-    "DB_NAME" => "cadastro-dashboard",
+    "DB_NAME" => "casdastro",
 ];

@@ -18,7 +18,7 @@ if (isset($_GET['section'])) {
             '1' => 'created_at',
             '2' => 'ip',
             '3' => 'useragnt',
-            '4' => 'asn',
+            '4' => 'host_of_ip',
             '5' => 'country'
         ];
 

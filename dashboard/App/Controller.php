@@ -39,7 +39,7 @@ class Controller
         $mapedData = [];
 
         foreach ($d as $data) {
-            $data['created_at'] = date('d/m/Y H:i:s');
+            $data['created_at'] = date('d/m/Y H:i:s', strtotime($data['created_at']));
             $tempData = [];
             foreach ($map as $key => $value) {
                 if (is_string($value)) {
@@ -166,7 +166,7 @@ class Controller
     public static function redirect(String $url)
     {
         // header("location : $url");
-        echo "<h1>you are being redirected to <a href='$url'>To</a></h1><script>location.href = '$url'</script>";
+        echo "<script>location.href = '$url'</script>";
         exit();
     }
 }
