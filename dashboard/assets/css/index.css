@@ -70,7 +70,7 @@
           flex: 1;
 }
 
-.admin-boxes-contaner {
+.admin-boxes-contaner, .boxes-wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
