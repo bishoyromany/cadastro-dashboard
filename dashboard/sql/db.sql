@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: May 20, 2021 at 03:30 AM
--- Server version: 10.5.5-MariaDB
--- PHP Version: 7.4.19
+-- Host: 127.0.0.1
+-- Generation Time: May 21, 2021 at 01:51 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cadastro-dashboard`
+-- Database: `casdastro`
 --
 
 -- --------------------------------------------------------
@@ -59,13 +60,6 @@ CREATE TABLE `registrations` (
   `created_at` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `registrations`
---
-
-INSERT INTO `registrations` (`id`, `full_name`, `cpf`, `telephone`, `email`, `purchase_type`, `requisition_number`, `date_year`, `lucky_number`, `created_at`) VALUES
-(1, 'Bishoy Romany', '111.111.111-11', '(011) 5866-7189', '7bishoyromany7@gmail.com', 'Bishoy-Test', '4444 4444 4444 4444', '10/2222', '222', '2021-05-19 22:08:44');
-
 -- --------------------------------------------------------
 
 --
@@ -84,7 +78,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `cookie`) VALUES
-(1, 'admin', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', 'bbcdedf5397c45b528ab2a0b623cdf07fec722fe');
+(1, 'admin', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '39f01d15902b8a249143cb938097888b22a6d1c4');
 
 -- --------------------------------------------------------
 
@@ -143,7 +137,7 @@ ALTER TABLE `configs`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -155,7 +149,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(7) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
