@@ -37,5 +37,9 @@ $(document).ready(($) => {
       searching: false,
       ajax: "API/index.php?section=" + $("#RecordsTable").data("section"),
     });
+    setTimeout(() => {
+      $(".dataTables_info").prepend($(".delete-all")[0]);
+      $(".dataTables_info .delete-all").removeClass("d-none");
+    }, 500)
   }
 });

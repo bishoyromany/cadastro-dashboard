@@ -112,6 +112,14 @@
   border: unset;
 }
 
+.delete-all {
+  display: inline-block;
+}
+
+.delete-all img {
+  width: 20px;
+}
+
 .btn-purple {
   background-color: #5969FF;
   color: #FFF;

@@ -16,7 +16,7 @@
 
                     <div class="col-4">
                         <div class="icon">
-                            <img src="<?php echo $controller::getImage("user-admin.svg") ?>" class="img-fluid" alt="Visitors">
+                            <img src="<?php echo $controller::getImage("users-solid.svg") ?>" class="img-fluid" alt="Visitors">
                         </div>
                     </div>
                 </div>

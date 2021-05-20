@@ -63,13 +63,13 @@ if (isset($_POST['action'])) {
             <div class="row">
                 <div class="col-6 text-left">
                     <?php if ($back) : ?>
-                        <a href="admin.php"><img src="<?php echo $controller::getImage("previous.svg"); ?>" alt="Back" class="img-fluid"></a>
+                        <a href="admin.php"><img src="<?php echo $controller::getImage("arrow-left-solid.svg"); ?>" alt="Back" class="img-fluid"></a>
                     <?php endif; ?>
                 </div>
                 <div class="col-6 text-right">
                     <form action="admin.php" method="POST">
                         <input type="hidden" value="1" name="logout" />
-                        <button><img src="<?php echo $controller::getImage("shut-down.svg"); ?>" alt="Logout" class="img-fluid"></button>
+                        <button><img src="<?php echo $controller::getImage("sign-out-alt-solid.svg"); ?>" alt="Logout" class="img-fluid"></button>
                     </form>
                 </div>
             </div>

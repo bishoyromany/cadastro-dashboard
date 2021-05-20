@@ -27,7 +27,7 @@
     <div class="card mt-4">
         <div class="card-header d-flex align-items-center justify-content-between">
             <span class="lead">Visitor List</span>
-            <form action="contador.php" method="POST">
+            <form action="contador.php" method="POST" class="delete-all d-none mr-2">
                 <input type="hidden" value="DELETE_ALL_VISITS" name="action">
                 <button class="btn-reset"><img class="img-fluid" src="<?php echo $controller::getImage("trash-bin.svg") ?>" alt="Delete"></button>
             </form>
