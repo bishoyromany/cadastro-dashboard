@@ -32,6 +32,7 @@ $(document).ready(($) => {
   if ($("#RecordsTable").length > 0) {
     const columns = [1, 2, 3, 4];
     if($("#RecordsTable").data("section") === "registrations"){
+      columns.push(5);
       columns.push(6);
       columns.push(7);
       columns.push(8);
