@@ -91,7 +91,6 @@ CREATE TABLE `visitors` (
   `ip` varchar(200) NOT NULL,
   `host_of_ip` varchar(200) NOT NULL,
   `useragnt` varchar(200) NOT NULL,
-  `country` varchar(200) NOT NULL,
   `created_at` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
