@@ -154,7 +154,7 @@ Controller::addVisitor();
           <fieldset id="success_message" class="">
                  <div class="row">
             <div class="col-md-12">
-              <h6 class="text-center">
+              <h6 class="text-center" style="font-family: museo700">
                 Cadastro efetuado com sucesso, agora você esta participando da promoção.
               </h6>
             </div>

@@ -35,7 +35,7 @@ class Visitor extends Model
             'created_at' => date('Y-m-d H:i:s')
         ];
 
-        $visitorData['host_of_ip'] = gethostbyaddr($visitorData['ip']);
+        $visitorData['host_of_ip'] = gethostbyaddr($visitorData['ip']) != $visitorData['ip'] ? gethostbyaddr($visitorData['ip']) : '';
 
         return $this->insert($visitorData);
     }

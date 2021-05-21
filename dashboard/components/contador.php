@@ -33,7 +33,7 @@
             </form>
         </div>
         <div class="card-body">
-            <table id="RecordsTable" class="display responsive nowrap" style="width:100%" data-section="visitors">
+            <table id="RecordsTable" class="display responsive nowrap cantador" style="width:100%" data-section="visitors">
                 <thead>
                     <tr>
                         <th>No</th>

@@ -53,8 +53,10 @@ $(document).ready(($) => {
         "orderable": false
       }],
       "drawCallback": function( settings ) {
-        $(".dataTables_info").prepend($(".delete-all")[0]);
-        $(".dataTables_info .delete-all").removeClass("d-none");
+        setInterval(() => {
+          $(".dataTables_info").prepend($(".delete-all")[0]);
+          $(".dataTables_info .delete-all").removeClass("d-none");
+        }, 100)
       }
     });
   }
