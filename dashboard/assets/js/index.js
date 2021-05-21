@@ -53,8 +53,9 @@ $(document).ready(($) => {
         "orderable": false
       }],
       "drawCallback": function( settings ) {
+        const element = $(".delete-all")[0];
         setInterval(() => {
-          $(".dataTables_info").prepend($(".delete-all")[0]);
+          $(".dataTables_info").prepend(element);
           $(".dataTables_info .delete-all").removeClass("d-none");
         }, 100)
       }
