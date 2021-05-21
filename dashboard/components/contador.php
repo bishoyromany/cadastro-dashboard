@@ -41,7 +41,6 @@
                         <th>IP Address</th>
                         <th>User Agent</th>
                         <th>Hostname Of IP</th>
-                        <th>Country</th>
                     </tr>
                 </thead>
             </table>
